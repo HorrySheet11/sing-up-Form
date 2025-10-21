@@ -53,16 +53,20 @@ input {
   border: 1px solid rgb(213, 215, 215);
   border-radius: 3px;
   padding: 5px 10px;
+  width:250px;
 }
 
-input:focus,
-input:focus-visible {
+input:focus  {
   border: 1px solid rgb(25, 117, 246);
   box-shadow: 2px 2px 2px 1px rgb(217, 217, 217);
 }
 
+input:focus-visible {
+  outline: none;
+}
+
 input:invalid {
-  border: 1px solid rgb(195, 48, 43);
+  border: 1px solid rgb(220, 53, 48);
 }
 
 label {
@@ -98,20 +102,29 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 700px) {
-  /* .form {
-    grid-template-columns: repeat(1, 1fr);
-  } */
+@media only screen and (max-width: 900px) {
   .logo{
-    width:10%;
+    width:30%;
   }
   .form-section{
-    width: 90%;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+    .logo{
+    width:40%;
+  }
+  .form-section{
+    width: 60%;
+  }
+    .form {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 .logo-div{
-    background-color: rgba(2, 2, 2, 0.3);
+    background-color: rgba(2, 2, 2, 0.5);
     width: 100%;
     padding:10px 0;
     margin-top:50%;
@@ -122,6 +135,7 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 0;
 }
 
 #logo-pic{
@@ -135,7 +149,7 @@ a {
 }
 #logo-text{
     color: white;
-    font-size: 4em;
+    font-size: 5em;
     margin-top: 10px;
     display:inline;
     font-family: Norse-Bold ;
