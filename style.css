@@ -13,17 +13,18 @@ body{
 }
 
 .logo{
-    width:40%;
+    width:38%;
     height:100vh;
     display:inline-block;
 }   
 
 .form-section{
-    width:auto;
+    width:62%;
     height:100vh;
     display:inline-block;
-    flex-basis: 55%;
-    padding: 10px;
+    flex-basis: auto;
+    padding-top:80px;
+    background-color: rgb(235, 235, 235);
 }
 
 img{
@@ -38,4 +39,16 @@ input{
 
 label{
     display:inline-block
+}
+
+.text{
+    padding:40px;
+}
+
+.form{
+    padding:20px 30px;
+    background-color: white;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
 }
